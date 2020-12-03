@@ -16,43 +16,45 @@
 
 </head>
 
-<body>
+<body style="font-family:Arial">
 
     <h1 style="text-align:center">PetService</h1>
     <h2 style="text-align:center">Formulario de cadastro</h2>
 
     <div style="width:400px;margin-left:50px">
-        <form asp-action="Cadastro" name="form" class="form-group">
-            <label asp-for="NomeDoDono">Nome do dono</label>
-            <input asp-for="NomeDoDono" class="form-control" />
+        <form asp-action="Cadastro" name="form" class="form-group" style="background-color: #FAD371;padding: 20px;border-radius: 10px">
+            <label asp-for="NomeDoDono" >Nome do dono</label>
+            <input asp-for="NomeDoDono" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="Cpf">CPF</label>
-            <input asp-for="Cpf" class="form-control" />
+            <label asp-for="Cpf" style="line-height:10px;margin-top:10px">CPF</label>
+            <input asp-for="Cpf" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="NumeroContato">Numero para contato</label>
-            <input asp-for="NumeroContato" class="form-control" />
+            <label asp-for="NumeroContato" style="line-height:10px;margin-top:10px">Numero para contato</label>
+            <input asp-for="NumeroContato" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="Endereco">Endereço</label>
-            <input asp-for="Endereco" class="form-control" />
+            <label asp-for="Endereco" style="line-height:10px;margin-top:10px">Endereço</label>
+            <input asp-for="Endereco" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="NomeDoPet">Nome do seu Pet</label>
-            <input asp-for="NomeDoPet" class="form-control" />
+            <label asp-for="NomeDoPet" style="line-height:10px;margin-top:10px">Nome do seu Pet</label>
+            <input asp-for="NomeDoPet" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="Especie">Informe a espécie do seu Pet</label>
-            <input asp-for="Especie" class="form-control" />
+            <label asp-for="Especie" style="line-height:10px;margin-top:10px">Informe a espécie do seu Pet</label>
+            <input asp-for="Especie" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="Raca">Informe a raça de seu Pet</label>
-            <input asp-for="Raca" class="form-control" />
+            <label asp-for="Raca" style="line-height:10px;margin-top:10px">Informe a raça de seu Pet</label>
+            <input asp-for="Raca" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="Peso">Informe o peso de seu pet</label>
-            <input asp-for="Peso" class="form-control" />
+            <label asp-for="Peso" style="line-height:10px;margin-top:10px">Informe o peso de seu pet</label>
+            <input asp-for="Peso" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="ApelidoDoPet">Se seu pet possuir um apelido informe aqui</label>
-            <input asp-for="ApelidoDoPet" class="form-control" />
+            <label asp-for="ApelidoDoPet" style="line-height:10px;margin-top:10px">Se seu pet possuir um apelido informe aqui</label>
+            <input asp-for="ApelidoDoPet" class="form-control"  autocomplete="off"/>
 
-            <label asp-for="Senha">Informe uma senha para poder acessar seu perfil</label>
-            <input asp-for="Senha" class="form-control" />
+            <label asp-for="Senha" style="line-height:10px;margin-top:10px">Informe uma senha para poder acessar seu perfil</label>
+            <input asp-for="Senha" class="form-control"  autocomplete="off"/>
 
+            <button type="button" class="btn btn-success" style="margin-top:10px" >Cadastrar</button>
+            <button type="button" class="btn btn-danger" style="margin-top:10px">Recusar</button>
         </form>
     </div>
 
