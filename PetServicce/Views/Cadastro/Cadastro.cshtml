@@ -1,0 +1,62 @@
+﻿@model PetServicce.Model.Cadastro
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap.css" rel="stylesheet" />
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" rel="stylesheet" />
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" rel="stylesheet" />
+    
+    <title>PetServiceCadastro</title>
+
+</head>
+
+<body>
+
+    <h1 style="text-align:center">PetService</h1>
+    <h2 style="text-align:center">Formulario de cadastro</h2>
+
+    <form asp-action="Cadastro" name="form" class="form_container"  >
+        <label asp-for="NomeDoDono">Nome do dono</label>
+        <input asp-for="NomeDoDono" />
+
+        <label asp-for="Cpf">CPF</label>
+        <input asp-for="Cpf" />
+        
+        <label asp-for="NumeroContato">Numero para contato</label>
+        <input asp-for="NumeroContato" />
+
+        <label asp-for="Endereco">Endereço</label>
+        <input asp-for="Endereco" />
+
+        <label asp-for="NomeDoPet">Nome do seu Pet</label>
+        <input asp-for="NomeDoPet" />
+
+        <label asp-for="Especie">Informe a espécie do seu Pet</label>
+        <input asp-for="Especie" />
+
+        <label asp-for="Raca">Informe a raça de seu Pet</label>
+        <input asp-for="Raca" />
+
+        <label asp-for="Peso">Informe o peso de seu pet</label>
+        <input asp-for="Peso" />
+
+        <label asp-for="ApelidoDoPet">Se seu pet possuir um apelido informe aqui</label>
+        <input asp-for="ApelidoDoPet" />
+
+        <label asp-for="Senha">Informe uma senha para poder acessar seu perfil</label>
+        <input asp-for="Senha" />
+
+    </form>
+
+    <script src="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js"></script>
+    <script src="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\js\bootstrap.js"></script>
+
+
+</body>
+
+</html>

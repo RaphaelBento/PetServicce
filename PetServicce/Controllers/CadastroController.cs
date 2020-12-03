@@ -14,5 +14,10 @@ namespace PetServicce.Controllers
         {
             return View();
         }
+
+        public IActionResult Cadastro() {
+
+            return View();
+                }
     }
 }
