@@ -55,7 +55,7 @@ namespace PetServicce
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Login}/{id?}");
+                    pattern: "{controller=GravaCadastro}/{action=Index}/{id?}");
             });
         }
     }
