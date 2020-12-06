@@ -12,6 +12,7 @@ namespace PetServicce.Model
         public string NomeDoDono { get; set; }
 
         [Required(ErrorMessage ="Campo cpf é de preenchimento obrigatório")]
+        [Key()]
         public string Cpf { get; set; }
 
         [Required(ErrorMessage ="Campo numero é de preenchimento obrigatório")]
@@ -33,6 +34,8 @@ namespace PetServicce.Model
 
         [Required(ErrorMessage ="Campo senha é obrigatório")]
         public string Senha { get; set; }
+
+        
 
     }
 }

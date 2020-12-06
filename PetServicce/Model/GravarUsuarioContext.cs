@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace PetServicce.Model
 {
-    public class GravarUsuario : DbContext
+    public class GravarUsuarioContext : DbContext
     {
-        public GravarUsuario(DbContextOptions<GravarUsuario> options) : base(options)
+        public GravarUsuarioContext(DbContextOptions<GravarUsuarioContext> options) : base(options)
         { }
 
         public DbSet<Cadastro> Cadastros { get; set; }
 
-    }
+   
+    
+}
 }

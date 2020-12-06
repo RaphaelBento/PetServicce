@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetServicce.Controllers
 {
-    public class GravarUsuarioController1 : Controller
+    public class GravarUsuarioController : Controller
     {
         public IActionResult Login()
         {
