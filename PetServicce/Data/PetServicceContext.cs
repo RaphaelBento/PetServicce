@@ -13,7 +13,7 @@ namespace PetServicce.Data
             : base(options)
         {
         }
-
+        public DbSet<CartaoDeVacinacao> CartaoDeVacinacaos { get; set; }
         public DbSet<PetServicce.Model.Cadastro> Cadastro { get; set; }
     }
 }

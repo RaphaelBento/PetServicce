@@ -9,8 +9,8 @@ using PetServicce.Data;
 namespace PetServicce.Migrations
 {
     [DbContext(typeof(PetServicceContext))]
-    [Migration("20201206023259_PetService")]
-    partial class PetService
+    [Migration("20201207000816_cartaoVacina")]
+    partial class cartaoVacina
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,30 +25,14 @@ namespace PetServicce.Migrations
                     b.Property<string>("Cpf")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ApelidoDoPet")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Endereco")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Especie")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NomeDoDono")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NomeDoPet")
-                        .IsRequired()
+                    b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NumeroContato")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Peso")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Raca")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Senha")
@@ -58,6 +42,43 @@ namespace PetServicce.Migrations
                     b.HasKey("Cpf");
 
                     b.ToTable("Cadastro");
+                });
+
+            modelBuilder.Entity("PetServicce.Model.CartaoDeVacinacao", b =>
+                {
+                    b.Property<string>("NomeDoPet")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("DataNascimento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DataVacina")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Especie")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MdeicoVeterinário")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Peso")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Raca")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sexo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Vacina")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NomeDoPet");
+
+                    b.ToTable("CartaoDeVacinacaos");
                 });
 #pragma warning restore 612, 618
         }

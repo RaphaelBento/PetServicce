@@ -13,7 +13,7 @@ namespace PetServicce.Model
         { }
 
         public DbSet<Cadastro> Cadastros { get; set; }
-
+        public DbSet<CartaoDeVacinacao> CartaoDeVacinacaos { get; set; }
    
     
 }
