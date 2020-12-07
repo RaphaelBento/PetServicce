@@ -1,0 +1,79 @@
+﻿@model PetServicce.Model.CartaoDeVacinacao
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>CartaoDeVacinacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeDoPet" class="control-label"></label>
+                <input asp-for="NomeDoPet" class="form-control" />
+                <span asp-validation-for="NomeDoPet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sexo" class="control-label"></label>
+                <input asp-for="Sexo" class="form-control" />
+                <span asp-validation-for="Sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Especie" class="control-label"></label>
+                <input asp-for="Especie" class="form-control" />
+                <span asp-validation-for="Especie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Raca" class="control-label"></label>
+                <input asp-for="Raca" class="form-control" />
+                <span asp-validation-for="Raca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" class="form-control" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataNascimento" class="control-label"></label>
+                <input asp-for="DataNascimento" class="form-control" />
+                <span asp-validation-for="DataNascimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vacina" class="control-label"></label>
+                <input asp-for="Vacina" class="form-control" />
+                <span asp-validation-for="Vacina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataVacina" class="control-label"></label>
+                <input asp-for="DataVacina" class="form-control" />
+                <span asp-validation-for="DataVacina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MdeicoVeterinário" class="control-label"></label>
+                <input asp-for="MdeicoVeterinário" class="form-control" />
+                <span asp-validation-for="MdeicoVeterinário" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
