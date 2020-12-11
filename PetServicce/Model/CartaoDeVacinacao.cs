@@ -33,6 +33,6 @@ namespace PetServicce.Model
 
         public string DataVacina { get; set; }
 
-        public string MdeicoVeterinário { get; set; }
+        public string MedicoVeterinario { get; set; }
     }
 }

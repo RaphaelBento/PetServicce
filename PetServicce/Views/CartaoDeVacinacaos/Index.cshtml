@@ -5,81 +5,102 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Sexo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Especie)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Raca)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Peso)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataNascimento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Vacina)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataVacina)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MdeicoVeterinário)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap.css" rel="stylesheet" />
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Inicio</h1>
+
+   
+    <table class="table table-bordered">
+        <thead style="background-color:darkgray">
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Sexo)
+                    @Html.DisplayNameFor(model => model.NomeDoPet)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Especie)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Raca)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Peso)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DataNascimento)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Telefone)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Vacina)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DataVacina)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.MdeicoVeterinário)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.NomeDoPet">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.NomeDoPet">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.NomeDoPet">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sexo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Especie)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Raca)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Peso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataNascimento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Vacina)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataVacina)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MedicoVeterinario)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NomeDoPet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Sexo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Especie)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Raca)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Peso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataNascimento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Vacina)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataVacina)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MedicoVeterinario)
+                    </td>
+                    <td>
+                        <button class="btn btn-warning"> <a style="color:whitesmoke" asp-action="Edit" asp-route-id="@item.NomeDoPet">Edit</a></button> |
+                        <button class="btn btn-primary"> <a style="color:whitesmoke" asp-action="Details" asp-route-id="@item.NomeDoPet">Details</a> </button>|
+                        <button class="btn btn-danger"> <a style="color:whitesmoke" asp-action="Delete" asp-route-id="@item.NomeDoPet">Delete</a> </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>
+        <a asp-action="Create">Adicionar Pet ao sistema</a>
+    </p>
+</body>
+</html>

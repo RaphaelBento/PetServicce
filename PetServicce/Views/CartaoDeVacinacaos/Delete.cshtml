@@ -5,72 +5,86 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>CartaoDeVacinacao</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Sexo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Sexo)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Especie)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Especie)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Raca)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Raca)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Peso)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Peso)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DataNascimento)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DataNascimento)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefone)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Telefone)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Vacina)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Vacina)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DataVacina)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DataVacina)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MdeicoVeterinário)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MdeicoVeterinário)
-        </dd>
-    </dl>
+<head>
+    <title>Excluir Pet do sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap.css" rel="stylesheet" />
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
 
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="NomeDoPet" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
-</div>
+    <h1></h1>
+
+    <h3 style="text-align:center">Tem certeza de que deseja excluir este Pet do sistema?</h3>
+    <div>
+        <h4 style="text-align:center">CartaoDeVacinacao</h4>
+        <hr />
+        <dl class="row" style="margin-left:500px">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Sexo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Sexo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Especie)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Especie)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Raca)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Raca)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Peso)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Peso)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DataNascimento)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Telefone)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Telefone)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Vacina)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Vacina)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DataVacina)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DataVacina)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.MedicoVeterinario)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MedicoVeterinario)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete" style="margin-left:500px">
+            <input type="hidden" asp-for="NomeDoPet" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <button class="btn btn-primary"> <a asp-action="Index" style="color:whitesmoke">Inicio</a></button>
+</form>
+    </div>
+    </body>
+</html>

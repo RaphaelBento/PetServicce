@@ -54,7 +54,7 @@ namespace PetServicce.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NomeDoPet,Sexo,Especie,Raca,Peso,DataNascimento,Telefone,Vacina,DataVacina,MdeicoVeterinário")] CartaoDeVacinacao cartaoDeVacinacao)
+        public async Task<IActionResult> Create([Bind("NomeDoPet,Sexo,Especie,Raca,Peso,DataNascimento,Telefone,Vacina,DataVacina,MedicoVeterinario")] CartaoDeVacinacao cartaoDeVacinacao)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace PetServicce.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("NomeDoPet,Sexo,Especie,Raca,Peso,DataNascimento,Telefone,Vacina,DataVacina,MdeicoVeterinário")] CartaoDeVacinacao cartaoDeVacinacao)
+        public async Task<IActionResult> Edit(string id, [Bind("NomeDoPet,Sexo,Especie,Raca,Peso,DataNascimento,Telefone,Vacina,DataVacina,MedicoVeterinario")] CartaoDeVacinacao cartaoDeVacinacao)
         {
             if (id != cartaoDeVacinacao.NomeDoPet)
             {

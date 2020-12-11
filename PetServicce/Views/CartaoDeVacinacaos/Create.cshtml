@@ -5,75 +5,89 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<h4>CartaoDeVacinacao</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NomeDoPet" class="control-label"></label>
-                <input asp-for="NomeDoPet" class="form-control" />
-                <span asp-validation-for="NomeDoPet" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sexo" class="control-label"></label>
-                <input asp-for="Sexo" class="form-control" />
-                <span asp-validation-for="Sexo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Especie" class="control-label"></label>
-                <input asp-for="Especie" class="form-control" />
-                <span asp-validation-for="Especie" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Raca" class="control-label"></label>
-                <input asp-for="Raca" class="form-control" />
-                <span asp-validation-for="Raca" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Peso" class="control-label"></label>
-                <input asp-for="Peso" class="form-control" />
-                <span asp-validation-for="Peso" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataNascimento" class="control-label"></label>
-                <input asp-for="DataNascimento" class="form-control" />
-                <span asp-validation-for="DataNascimento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Telefone" class="control-label"></label>
-                <input asp-for="Telefone" class="form-control" />
-                <span asp-validation-for="Telefone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Vacina" class="control-label"></label>
-                <input asp-for="Vacina" class="form-control" />
-                <span asp-validation-for="Vacina" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataVacina" class="control-label"></label>
-                <input asp-for="DataVacina" class="form-control" />
-                <span asp-validation-for="DataVacina" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MdeicoVeterinário" class="control-label"></label>
-                <input asp-for="MdeicoVeterinário" class="form-control" />
-                <span asp-validation-for="MdeicoVeterinário" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<head>
+    <title>Cadastrar Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap.css" rel="stylesheet" />
+    <link href="C:\Users\55519\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h1></h1>
+
+    <h4 style="margin-left:450px">Cartao de vacinacao do pet</h4>
+    <hr />
+    <div class="row"  style="margin-left:450px">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="NomeDoPet" class="control-label"></label>
+                    <input asp-for="NomeDoPet" class="form-control" />
+                    <span asp-validation-for="NomeDoPet" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Sexo" class="control-label"></label>
+                    <input asp-for="Sexo" class="form-control" />
+                    <span asp-validation-for="Sexo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Especie" class="control-label"></label>
+                    <input asp-for="Especie" class="form-control" />
+                    <span asp-validation-for="Especie" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Raca" class="control-label"></label>
+                    <input asp-for="Raca" class="form-control" />
+                    <span asp-validation-for="Raca" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Peso" class="control-label"></label>
+                    <input asp-for="Peso" class="form-control" />
+                    <span asp-validation-for="Peso" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataNascimento" class="control-label"></label>
+                    <input asp-for="DataNascimento" class="form-control" />
+                    <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Telefone" class="control-label"></label>
+                    <input asp-for="Telefone" class="form-control" />
+                    <span asp-validation-for="Telefone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vacina" class="control-label"></label>
+                    <input asp-for="Vacina" class="form-control" />
+                    <span asp-validation-for="Vacina" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataVacina" class="control-label"></label>
+                    <input asp-for="DataVacina" class="form-control" />
+                    <span asp-validation-for="DataVacina" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MedicoVeterinario" class="control-label"></label>
+                    <input asp-for="MedicoVeterinario" class="form-control" />
+                    <span asp-validation-for="MedicoVeterinario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary"  style="margin-top:25px"/>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <a asp-action="Index">Voltar para lista de carteirinhas de vacinação</a>
+    </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+    </body>
+</html>
