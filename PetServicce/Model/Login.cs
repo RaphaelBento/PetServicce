@@ -8,13 +8,16 @@ namespace PetServicce.Model
 {
     public class Login
     {
-        [Required(ErrorMessage ="Campo Usuario não pode ficar em branco")]
+      
         public string Usuario { get; set; }
 
-
-        [Required(ErrorMessage ="Campo senha não pode ficar em branco")]
+        public string CPF { get; set; }
+     
         public string Senha { get; set; }
 
+
+
+       
 
 
     }

@@ -12,9 +12,13 @@ namespace PetServicce.Model
         public GravarUsuarioContext(DbContextOptions<GravarUsuarioContext> options) : base(options)
         { }
 
+        public GravarUsuarioContext()
+        {
+        }
+
         public DbSet<Cadastro> Cadastros { get; set; }
         public DbSet<CartaoDeVacinacao> CartaoDeVacinacaos { get; set; }
-   
-    
+
+
 }
 }

@@ -18,6 +18,18 @@ namespace PetServicce.Controllers
         {
             _context = context;
         }
+        //
+
+        //
+
+        //fazendo consulta no  banco de dados pelo nome do pet
+        public IActionResult Cad() {
+
+            var nomes = _context.CartaoDeVacinacaos.Include(m => m.NomeDoPet)
+                    .Include(m => m.NomeDoPet).ToList();
+            return View(nomes);
+
+        }
 
         // GET: Cadastroes
         public async Task<IActionResult> Index()
@@ -25,7 +37,9 @@ namespace PetServicce.Controllers
             return View(await _context.Cadastro.ToListAsync());
         }
 
+
         // GET: Cadastroes/Details/5
+        
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -42,7 +56,7 @@ namespace PetServicce.Controllers
 
             return View(cadastro);
         }
-
+     
         // GET: Cadastroes/Create
         public IActionResult Create()
         {
